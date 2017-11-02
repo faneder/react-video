@@ -34,7 +34,7 @@ const styles = theme => ({
 
 const VideoListItem = ({video, onVideoSelect, classes}) => {
   const imageUrl = video.snippet.thumbnails.default.url;
-  console.log(video);
+
   return (
     <Card onClick={() => onVideoSelect(video)} className={classes.card}>
       <div>

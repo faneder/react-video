@@ -1,8 +1,9 @@
 import _ from 'lodash';
 import React, { Component } from 'react';
 import YTSearch from 'youtube-api-search';
-import AppBar from './AppBar';
+import config from './../config/config';
 
+import AppBar from './AppBar';
 import VideoList from './VideoList';
 import VideoDetail from './VideoDetail';
 
@@ -40,7 +41,7 @@ const styles = theme => ({
 });
 
 // put your api key
-const API_KEY = '';
+const API_KEY = config.api.youtube;
 
 class App extends Component {
   constructor(props) {
