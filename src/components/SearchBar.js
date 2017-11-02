@@ -1,4 +1,9 @@
 import React, {Component} from 'react';
+import Input from 'material-ui/Input';
+
+const styles = theme => ({
+
+});
 
 class SearchBar extends Component {
     constructor(props) {
@@ -10,9 +15,10 @@ class SearchBar extends Component {
     }
     render() {
         return (
-            <div className="search-bar">
-                <input
-                    value={this.state.term}
+            <div>
+                <i className="material-icons">search</i>
+                <Input
+                    defaultValue={this.state.term}
                     onChange={event => this.onInputChange(event.target.value)}
                 />
             </div>
@@ -26,3 +32,5 @@ class SearchBar extends Component {
 }
 
 export default SearchBar;
+
+// export default SearchBar;
